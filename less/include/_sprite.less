@@ -1,0 +1,47 @@
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+.sprite {
+    background-image: url("../img/spritesheet.png");   
+    background-repeat: no-repeat;
+    display: block;
+
+    &.sprite-arrow {
+        .stitches-sprite(-5px, -5px, 5px, 6px);
+    }
+
+    &.sprite-business-icon {
+        .stitches-sprite(-20px, -5px, 47px, 97px);
+    }
+
+    &.sprite-fb {
+        .stitches-sprite(-77px, -5px, 48px, 48px);
+    }
+
+    &.sprite-personal-icon {
+        .stitches-sprite(-135px, -5px, 49px, 103px);
+    }
+
+    &.sprite-resource-icon {
+        .stitches-sprite(-194px, -5px, 46px, 94px);
+    }
+
+    &.sprite-rs {
+        .stitches-sprite(-5px, -118px, 48px, 48px);
+    }
+
+    &.sprite-twit {
+        .stitches-sprite(-63px, -118px, 48px, 48px);
+    }
+
+    &.sprite-wk {
+        .stitches-sprite(-121px, -118px, 48px, 48px);
+    }
+
+    &.sprite-yt {
+        .stitches-sprite(-179px, -118px, 48px, 48px);
+    }
+}

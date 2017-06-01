@@ -1,0 +1,107 @@
+.about {
+	padding: 12px 0 20px;
+	background-color: #E2E6E9;
+	.container {
+		.about_item {
+			vertical-align: top;
+			margin-right: 6px;
+			padding: 0 25px 29px;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+			width: 306px;
+			background-color: #FCFCFC;
+			border-radius: 7px;
+			box-shadow: 0px 0px 0.48px 0.52px rgba(0, 0, 0, 0.15);
+			&:last-child {
+				margin-right: 0;
+			}
+			.about_title {
+				position: relative;
+				padding: 28px 0 7px 63px;
+				font-size: 24px;
+				letter-spacing: -1px;
+				color: #353535;
+				border-bottom: 1px dashed #D2D2D2;
+				&.personal::before {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 49px;
+					height: 103px;
+					background-image: url("../img/spritesheet.png");
+					background-position: -135px -5px;
+				}
+				&.resource::before {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 46px;
+					height: 94px;
+					background-image: url("../img/spritesheet.png");
+					background-position: -194px -5px;
+				}
+				&.business::before {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 47px;
+					height: 97px;
+					background-image: url("../img/spritesheet.png");
+					background-position: -20px -5px;
+				}    
+			}
+			.about_img {
+				display: block;
+				width: 100%;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+				margin: 17px 0 14px;
+			}
+			.about_text {
+				margin-bottom: 18px;
+				padding-left: 7px;
+				font-family: 'Arial', sans-serif;
+				font-size: 12px;
+				color: #808080;
+			}
+			.about_list {
+				padding-left: 0;
+				text-transform: uppercase;
+				text-decoration: underline;
+				li {
+					list-style: none;
+					a {
+						position: relative;
+						padding-left: 19px;
+						font-size: 10px;
+						line-height: 10px;
+						font-family: Arial, sans-serif;
+						color: #ec8c04;
+						&::before {
+							content: "";
+							position: absolute;
+							width: 6px;
+							height: 6px;
+							top: 25%;
+							left: 3%;
+							background-image: url("../img/spritesheet.png");
+							background-position: -5px -5px;
+						}
+					}
+				}	
+			}
+			.btn {
+				background: linear-gradient(to top, #0C0C0C,  #464646);
+				&:hover {
+					color: #fff;
+					background: #686161;
+				}
+			}
+		}
+	}
+}

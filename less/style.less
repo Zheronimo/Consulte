@@ -1,0 +1,99 @@
+/*============    ШРИФТЫ    ===========*/
+@font-face {
+	font-family: 'main';
+	src: url('../fonts/open-sans/OpenSans.eot');
+	src: url('../fonts/open-sans/OpenSans.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/open-sans/OpenSans.woff') format('woff'),
+		url('../fonts/open-sans/OpenSans.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'main-italic';
+	src: url('../fonts/open-sans/OpenSans-Italic.eot');
+	src: url('../fonts/open-sans/OpenSans-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/open-sans/OpenSans-Italic.woff') format('woff'),
+		url('../fonts/open-sans/OpenSans-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+/*============    ГЛАВНЫЙ ЭКРАН    ===========*/
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'main', sans-serif;
+	overflow: hidden;
+}
+.container {
+	width: 936px;
+	padding: 0;
+}
+.row {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+.text-yellow {
+	color: #ec8c04;
+	text-transform: uppercase;
+}
+.btn {
+	font-family: 'main', sans-serif;
+	padding-top: 8px;
+	font-size: 13px;
+	border-radius: 5px;
+	background: linear-gradient(to bottom, #F4A503, #E67E00);
+	width: 101px;
+	height: 38px;
+	color: #fff;
+	text-transform: uppercase;
+	&:hover {
+		color: #fff;
+		background: #F4A503;
+	}
+}
+@bg-black: linear-gradient(to bottom, #161616, #424242);
+/*============    SPRITE    ===========*/
+@import "include/_sprite.less";
+/*============    HEADER    ===========*/
+@import "include/_header.less";
+/*============    BANNER    ===========*/
+@import "include/_banner.less";
+/*============    ABOUT    ===========*/
+@import "include/_about.less";
+/*============    SERVICES    ===========*/
+@import "include/_services.less";
+/*============    ПОДВАЛ   ===========*/
+@import "include/_footer.less";
+/*============    	ВСПЛЫВАЮЩИЕ ОКНА    ===========*/
+
+/*============    	АДАПТИВ    ===========*/
+
+@media(min-width:0px) and (max-width:320px) {
+	
+}
+
+@media(min-width:321px) and (max-width:480px) {
+	
+}
+
+@media(min-width:481px) and (max-width:768px) {
+	
+}
+
+@media(min-width:769px) and (max-width:992px) {
+	
+}
+
+@media(min-width:993px) and (max-width:1200px) {
+	
+}
+
+
+
